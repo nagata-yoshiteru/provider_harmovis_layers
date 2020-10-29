@@ -895,6 +895,11 @@ class App extends Container<any,any> {
 					actions,
 					visible: this.state.moveDataVisible,
 					optionVisible: this.state.moveOptionVisible,
+					iconDesignations:[
+						{type:'walker', layer:'Scatterplot',},
+						{type:'walker_out', layer:'Scatterplot', getColor:()=>[255,31,31,255],},
+						{type:'walker_rvo', layer:'Scatterplot', getColor:()=>[0,255,255,255],},
+					],
 					layerRadiusScale: 0.03,
 					layerOpacity: 0.8,
 					getRouteWidth: () => 0.2,

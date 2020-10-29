@@ -19,6 +19,7 @@ import MapLayerController from './MapLayerController'
 // for clearArc / Scatter
 import * as actions from '../actions/actions'
 import store from '../store'
+import PFlowInput from './PFlowInput'
 
 
 //import { HeatmapState } from '../reducer/heatmapSettings'
@@ -183,6 +184,14 @@ export default class Controller extends React.Component<ControllerProps, ContSta
                 <label htmlFor='MoveOptionChecked' className='form-check-label'>移動データオプション表示</label>
               </div>
             </li>
+            <li>
+              <div className="harmovis_input_button_colum vis_sample_input_button_column">
+                <label htmlFor="PflowInput" className="btn btn-outline-light btn-sm w-100">
+                  人流データ選択<PFlowInput actions={actions} id="PflowInput" />
+                </label>
+              </div>
+            </li>
+
             {/*
             <li>
               <div className='form-check'>
