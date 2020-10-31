@@ -900,7 +900,7 @@ class App extends Container<any,any> {
 						{type:'walker_out', layer:'Scatterplot', getColor:()=>[255,31,31,255],},
 						{type:'walker_rvo', layer:'Scatterplot', getColor:()=>[0,255,255,255],},
 					],
-					layerRadiusScale: 0.03,
+					layerRadiusScale: 0.02,
 					layerOpacity: 0.8,
 					getRouteWidth: () => 0.2,
 //					getStrokeWidth: 0.1,
